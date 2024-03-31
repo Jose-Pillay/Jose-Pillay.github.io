@@ -2,7 +2,7 @@
   height: inherit;
   color: black;
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 
 html {
@@ -14,7 +14,7 @@ h1 {
   z-index: 1;
   font-size: 90px;
   color: transparent;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: #64ffda;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   border-radius: 44px;
@@ -32,28 +32,118 @@ body {
 .backgroundImg {
   position: absolute;
   z-index: -1;
-  width: 100%;
+  width: 99%;
   filter: blur(5px);
   height: 50%;
   background-repeat: repeat;
-  background-size:contain;
+  background-size: contain;
   background-image: url("./cbe94350d7cc0e8ea041cd43336a4f99.jpg");
   filter: blur(2px);
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-family: inherit;
+  gap: 10px;
+  padding-inline: 2em;
+  padding-bottom: 0.4em;
+  background-color: #171717;
+  /* background-color: #0a192f; */
+  border-radius: 20px;
+}
+
+.form-heading {
+  text-align: center;
+  margin: 1em;
+  color: #64ffda;
+  font-size: 1.2em;
+  background-color: transparent;
+  align-self: center;
+}
+
+.form-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 10px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #ccd6f6;
+  padding-inline: 1em;
+}
+.sendMessage-btn {
+  cursor: pointer;
+  margin-bottom: 3em;
+  padding: 1em;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #64ffda;
+  font-weight: bold;
+  outline: 1px solid #64ffda;
+  transition: all ease-in-out 0.3s;
+}
+
+.sendMessage-btn:hover {
+  transition: all ease-in-out 0.3s;
+  background-color: #64ffda;
+  color: #000;
+  cursor: pointer;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.form-card1 {
+  background-image: linear-gradient(163deg, #64ffda 0%, #64ffda 100%);
+  border-radius: 22px;
+  transition: all 0.3s;
+}
+
+.form-card1:hover {
+  box-shadow: 0px 0px 30px 1px rgba(100, 255, 218, 0.3);
+}
+
+.form-card2 {
+  border-radius: 0;
+  transition: all 0.2s;
+}
+
+.form-card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
+
 .header-content {
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
   display: grid;
   justify-content: center;
   align-items: center;
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 header {
   z-index: -1;
   background-size: contain;
-  font-family: "Rubik Wet Paint", system-ui;
-  font-weight: 400;
-  font-style: normal;
   border: 8px solid black;
-  display:grid;
+  display: grid;
   place-content: center;
 }
 
@@ -64,16 +154,16 @@ main {
 }
 
 #content {
-  background-color: grey;
+  background-color: #171717;
 }
 
 #contact {
-  background-color: silver;
+  background-color: #171717;
 }
 
 footer {
   border: 5px double black;
-  background-color: black;
+  background-color: #171717;
 }
 
 @media screen and (max-width: 768px) {
@@ -85,8 +175,10 @@ footer {
   html {
     overflow-y: hidden;
   }
-  /* body {
-  } */
+  body {
+    overflow-y: scroll;
+  }
+
   #content {
     min-height: 400px;
   }
