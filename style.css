@@ -1,7 +1,8 @@
 * {
   height: inherit;
-  color: white;
+  color: black;
   margin: 0;
+  padding:0;
 }
 
 html {
@@ -9,26 +10,55 @@ html {
   overflow: hidden;
 }
 
+h1 {
+  z-index: 1;
+  font-size: 90px;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  border-radius: 44px;
+  text-shadow: 24px 24px 47px #353434cb, -24px -24px 47px #353434ab;
+}
+
 body {
   overflow-x: hidden;
-  background-color: black;
   text-align: center;
-  overflow-x: hidden;
+  overflow-y: hidden;
   display: grid;
   grid-template-rows: 2fr 7fr 1fr;
 }
 
-header {
-  border: 5px double gold;
-  padding: 10px 10px 0px 10px;
+.backgroundImg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  filter: blur(5px);
+  height: 50%;
+  background-repeat: repeat;
+  background-size:contain;
+  background-image: url("./cbe94350d7cc0e8ea041cd43336a4f99.jpg");
+  filter: blur(2px);
+}
+.header-content {
   display: grid;
-  grid-template-rows: 1fr 1fr;
   justify-content: center;
   align-items: center;
 }
 
+header {
+  z-index: -1;
+  background-size: contain;
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  border: 8px solid black;
+  display:grid;
+  place-content: center;
+}
+
 main {
-  border: 5px double gold;
+  border: 5px solid black;
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
@@ -42,7 +72,7 @@ main {
 }
 
 footer {
-  border: 5px double gold;
+  border: 5px double black;
   background-color: black;
 }
 
