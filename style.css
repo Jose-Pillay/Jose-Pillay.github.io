@@ -138,7 +138,9 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-
+.container .card{
+  scroll-snap-align:center;
+}
 header {
   z-index: -1;
   background-size: contain;
