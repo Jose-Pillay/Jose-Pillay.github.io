@@ -154,6 +154,7 @@ main {
 }
 
 #content {
+  max-width: 75vw;
   background-color: #171717;
 }
 
@@ -185,4 +186,39 @@ footer {
   footer {
     display: none;
   }
+  #content {
+    max-width: 100vw;
+    background-color: #171717;
+  }
+}
+.container {
+  overflow-x: scroll;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 4rem 2rem 2rem 2rem;
+  min-width: 250px;
+  height: 50%;
+}
+
+.title {
+  width: 100%;
+  display: inline-block;
+  word-break: break-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin: 1rem auto;
 }
