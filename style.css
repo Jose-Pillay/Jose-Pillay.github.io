@@ -192,12 +192,14 @@ footer {
   }
 }
 .container {
+  border-radius: 10px;
   overflow-x: scroll;
   display: flex;
   scroll-snap-type: x mandatory;
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 15px;
+  box-shadow: inset 0 0px 20px 0 #64ffda;
 }
 .container::-webkit-scrollbar {
   display: none;
@@ -212,6 +214,12 @@ footer {
   margin: 4rem 2rem 2rem 2rem;
   min-width: 275px;
   height: 60%;
+
+  background-image: url("./Screenshot_20240401_180431_Chrome.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* padding: 1em; */
 }
 
 .title {
@@ -223,6 +231,6 @@ footer {
   text-overflow: ellipsis;
   text-align: center;
   margin: 1rem auto;
-  color:white;
+  color: white;
 }
 
