@@ -212,16 +212,16 @@ footer {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(7px);
   border-radius: 10px;
-  padding: 2rem;
+  padding: 2rem 4.3rem;
   margin: 4rem 2rem 2rem 2rem;
   min-width: 275px;
+  max-width: fit-content;
   height: 60%;
-
-/*   background-image: url("./Screenshot_20240401_180431_Chrome.jpg"); */
-  background-size: contain;
+  background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* padding: 1em; */
+  border: 2px solid white;
+
 }
 
 .title {
@@ -235,4 +235,5 @@ footer {
   margin: 1rem auto;
   color: white;
 }
+
 
